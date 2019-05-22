@@ -1,0 +1,92 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center">{{title}}</h2>
+            <h2 class="text-center">Registro de Alumno</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                        {{!-- comienza el formulario de registro --}}
+                    <form action="/registro/usuario/" method="POST" >   
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Name</label>
+                                <input type="text" class="form-control" id="inputName" name="inputName"
+                                    placeholder="Name">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" name="inputEmail"
+                                    placeholder="Email">
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                
+
+                                <input type="password" class="form-control" id="inputPassword" name="inputPassword"
+                                    placeholder="Password">
+                                    <label class="text-danger" for="inputPassword4">{{errorpassword}}</label>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Confirm Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" name="inputPassword2"
+                                    placeholder="Password">
+                            </div>  
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" name="inputAdress"
+                                placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" name="inputAdress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" name="inputCity" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" name="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option value="CABA"> CABA</option>
+                                    <option value="GBA OESTE"> GBA OESTE</option>
+                                    <option value="GBA NORTE"> GBA NORTE</option>
+                                    <option value="GBA SUR"> GBA SUR</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" name="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Perfil Image</label>
+                                    <input type="file" class="form-control-file" id="inputImagenPerfil" 
+                                    name="inputImagenPerfil">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

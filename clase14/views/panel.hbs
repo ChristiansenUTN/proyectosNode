@@ -1,0 +1,38 @@
+<div class="container">
+
+
+    <h1 class="text-center" > {{curso}} | {{dias}}  </h1>
+
+    <h1 class="text-center" > Cantidad de alumnos {{alumnos.length}}  </h1>
+
+    <div class="row">
+
+
+
+        {{#each alumnos}}
+        <div class="col-4 mt-2">
+
+            <div class="card" style="width: 18rem;">
+                <img src="/images/{{foto}}" class="mt-1 card-img-top w-50 rounded mx-auto d-block" alt="...">
+                <div class="card-body text-center">
+                    <p class="card-text">
+                        <a href="/persona/{{nombre}}/{{edad}}/{{foto}}">{{nombre}}</a>
+                        </p>
+                    <p class="card-text">{{edad}}</p>
+                </div>
+            </div>
+ 
+
+
+
+
+        </div>
+
+        {{/each}}
+
+
+    </div>
+
+
+
+</div>

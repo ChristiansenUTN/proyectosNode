@@ -1,0 +1,24 @@
+<h1>PANEL DE USUARIO</h1>
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Password</th>
+      <th scope="col">Mail Confirmado</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each dato}}
+    <tr>
+      <td>{{id_usuarios}}</td>
+      <td>{{usuario}}</td>
+      <td>{{password}}</td>
+      <td>{{confirmados}}</td>
+    </tr>
+  
+  </tbody>
+</table>
